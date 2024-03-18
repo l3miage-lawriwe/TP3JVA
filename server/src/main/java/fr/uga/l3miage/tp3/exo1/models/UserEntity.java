@@ -8,6 +8,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 import java.util.Set;
+import fr.uga.l3miage.tp3.exo1.repositories.*;
 
 @Entity
 @Setter
@@ -24,4 +25,5 @@ public class UserEntity {
     @OneToMany
     @JoinColumn(name = "name")
     private Set<PlaylistEntity> playlistEntities;
+
 }
